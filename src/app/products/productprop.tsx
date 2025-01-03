@@ -47,6 +47,12 @@ const ProductPropsData = ({ productData }: IProductsProps) => {
       router.push("/cart");
     }
   };
+  function formatImageUrl(url: string) {
+    if (url.startsWith("//")) {
+      return "https:" + url; // https: add karein agar protocol nahi hai
+    }
+    return url; // Agar URL theek hai, to usi ko return karein
+  }
 
   return (
     <>
@@ -63,12 +69,12 @@ const ProductPropsData = ({ productData }: IProductsProps) => {
               className="w-80 h-[80vh] bg-[rgba(0,0,0,0.5)] text-white rounded-2xl p-3 flex flex-col justify-between border-2"
             >
               <div className="h-[55%] w-full bg-white rounded-2xl overflow-hidden">
-                <img
-                  src={item.api_featured_image}
+                <Image
+                  src={formatImageUrl(item.api_featured_image)} // Helper function use karein
                   className="w-[70%] h-full mx-auto"
                   alt={item.name}
-                  width={300}
-                  height={300}
+                  width={500}
+                  height={500}
                 />
               </div>
               <div className="h-[30%] w-full flex flex-col justify-evenly">
@@ -100,4 +106,3 @@ const ProductPropsData = ({ productData }: IProductsProps) => {
 };
 
 export default ProductPropsData;
-

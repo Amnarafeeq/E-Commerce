@@ -57,12 +57,18 @@ const SingleProduct = ({ blush }: { blush: IProductData }) => {
       router.push("/cart");
     }
   };
+  function formatImageUrl(url: string) {
+    if (url.startsWith("//")) {
+      return "https:" + url;
+    }
+    return url;
+  }
 
   return (
     <div className=" sm:w-[60%] lg:w-[45%] h-auto bg--500 mx-auto my-7 py-6 border-2 bg-[rgba(0,0,0,0.6)] border-white rounded-3xl shadow-lg">
       <div className="w-[80%] md:h-[60vh] bg--800 p-3 my-6 mx-auto rounded-xl">
         <Image
-          src={blush.api_featured_image}
+          src={formatImageUrl(blush.api_featured_image)}
           alt={blush.name}
           className="h-full w-[90%] mx-auto bg-white lg:p-4 rounded-xl"
           width={500}

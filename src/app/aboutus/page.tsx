@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="bg-[url('/images/about.jpg')] bg-cover   container mx-auto p-4 sm:p-8 space-y-8">
-      <section className="text-center py-4 sm:py-12 px-4 sm:px-8 bg-[rgba(0,0,0,0.5)] text-white w-[80%] mx-auto rounded-xl ">
+    <div className="bg-[url('/images/about.jpg')] bg-cover   container mx-auto p-2 sm:p-8 space-y-8">
+      <section className="text-center py-4 sm:py-12 px-4 sm:px-8 bg-[rgba(0,0,0,0.5)] text-white sm:w-[80%] mx-auto rounded-xl ">
         <h2 className="text-3xl font-extrabold mb-6">Our Story</h2>
         <p className="text-sm sm:text-lg mb-4">
           Welcome to our online makeup store! We started with the mission to
@@ -14,7 +14,7 @@ const About = () => {
         </p>
         <div className="relative w-full h-64 md:h-96 mb-6 border-4  border-gray-700 rounded-xl overflow-hidden">
           <Image
-            src="/images/about1.avif" // Add your image in public/images/our-story.jpg
+            src="/images/about1.avif" 
             alt="Our Story"
             layout="fill"
             objectFit="cover"

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 interface IProduct {
@@ -52,7 +53,12 @@ const CartPage = () => {
 
   window.dispatchEvent(new Event('cartUpdated'));
 };
-
+function formatImageUrl(url: string) {
+  if (url.startsWith("//")) {
+    return "https:" + url;
+  }
+  return url;
+}     
   return (
     <div className="container bg-[url('/images/cart.jpg')] bg-cover mx-auto py-6  rounded-xl min-h-[100vh]">
       <h1 className='text-3xl font-bold py-4 text-center'>Your Cart</h1>
@@ -63,8 +69,10 @@ const CartPage = () => {
               key={item.id}
               className='border sm:mx-5 mb-4 bg-[rgba(0,0,0,0.7)] text-white p-4 mb- flex justify-between bg--500 max-sm:w-[50%] mx-auto items-center gap-x-8 max-sm:flex-col max-sm:gap-y-5'
             >
-              <img
-                src={item.api_featured_image}
+              <Image
+                width={200}
+                height={200}  
+                src={formatImageUrl(item.api_featured_image)}
                 alt={item.name}
                 className='w-28  bg--400 h-20 object-cover rounded-md'
               />
