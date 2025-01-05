@@ -60,7 +60,7 @@ function formatImageUrl(url: string) {
   return url;
 }     
   return (
-    <div className="container bg-[url('/images/cart.jpg')] bg-cover mx-auto py-6  rounded-xl min-h-[100vh]">
+    <div className="container bg-[url('/Images/cart.jpg')] bg-cover mx-auto py-6  rounded-xl min-h-[100vh]">
       <h1 className='text-3xl font-bold py-4 text-center'>Your Cart</h1>
       {cartItems.length > 0 ? (
         <>
