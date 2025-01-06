@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="bg-[url('/images/about.jpg')] bg-cover   container mx-auto p-2 sm:p-8 space-y-8">
+    <div className="bg-[url('/Images/about.jpg')] bg-cover   container mx-auto p-2 sm:p-8 space-y-8">
       <section className="text-center py-4 sm:py-12 px-4 sm:px-8 bg-[rgba(0,0,0,0.5)] text-white sm:w-[80%] mx-auto rounded-xl ">
         <h2 className="text-3xl font-extrabold mb-6">Our Story</h2>
         <p className="text-sm sm:text-lg mb-4">
@@ -14,7 +14,7 @@ const About = () => {
         </p>
         <div className="relative w-full h-64 md:h-96 mb-6 border-4  border-gray-700 rounded-xl overflow-hidden">
           <Image
-            src="/images/about1.avif" 
+            src="/Images/about1.avif" 
             alt="Our Story"
             layout="fill"
             objectFit="cover"
@@ -33,7 +33,7 @@ const About = () => {
         </p>
         <div className="relative w-full h-64 md:h-96 mb-6 border-4  border-gray-700 rounded-xl overflow-hidden">
           <Image
-            src="/images/about2.jpg" // Add your image in public/images/our-mission.jpg
+            src="/Images/about2.jpg" 
             alt="Our Mission"
             layout="fill"
             objectFit="cover"
@@ -46,11 +46,10 @@ const About = () => {
           Why Choose Us
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Inclusive Beauty */}
           <div className="text-center">
             <div className="relative w-full h-64 mb-4 border-4  border-gray-700 rounded-xl overflow-hidden">
               <Image
-                src="/images/about3.jpeg" // Add your image in public/images/inclusive-beauty.jpg
+                src="/Images/about3.jpeg" 
                 alt="Inclusive Beauty"
                 layout="fill"
                 objectFit="cover"
@@ -63,11 +62,10 @@ const About = () => {
             </p>
           </div>
 
-          {/* Cruelty-Free */}
           <div className="text-center">
             <div className="relative w-full h-64 mb-4 border-4  border-gray-700 rounded-xl overflow-hidden">
               <Image
-                src="/images/about4.webp" // Add your image in public/images/cruelty-free.jpg
+                src="/Images/about4.webp" 
                 alt="Cruelty-Free"
                 layout="fill"
                 objectFit="cover"
@@ -80,11 +78,10 @@ const About = () => {
             </p>
           </div>
 
-          {/* Expertly Crafted */}
           <div className="text-center">
             <div className="relative w-full h-64 mb-4 border-4  border-gray-700 rounded-xl overflow-hidden">
               <Image
-                src="/images/about5.avif" // Add your image in public/images/expertly-crafted.jpg
+                src="/Images/about5.avif" 
                 alt="Expertly Crafted"
                 layout="fill"
                 objectFit="cover"
@@ -107,7 +104,7 @@ const About = () => {
         </p>
         <div className="relative w-full h-64 md:h-96 mb-6 border-4  border-gray-700 rounded-xl overflow-hidden">
           <Image
-            src="/images/about6.webp" // Add your image in public/images/join-us.jpg
+            src="/Images/about6.webp" 
             alt="Join Our Journey"
             layout="fill"
             objectFit="cover"

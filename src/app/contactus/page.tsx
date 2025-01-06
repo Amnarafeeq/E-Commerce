@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="bg-[url('/images/bg3.jpg')] bg-cover py-5 ">
+    <section className="bg-[url('/Images/bg3.jpg')] bg-cover py-5 ">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md  bg-[rgba(255,255,255,0.6)] rounded-3xl">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-slate-900 ">
           Contact Us
